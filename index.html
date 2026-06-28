@@ -12,28 +12,27 @@
 </head>
 <body>
 
-  <!-- ═══════════════════════════════ HEADER ═══════════════════════════════ -->
+  <!-- HEADER -->
   <header class="site-header" id="site-header">
     <div class="header-inner">
       <a href="#hero" class="logo">
-        <svg class="logo-icon" viewBox="0 0 36 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-          <path d="M2 22 L9 8 L14 14 L18 6 L22 14 L27 8 L34 22" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+        <svg class="logo-icon" viewBox="0 0 36 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M2 22 L9 8 L14 14 L18 6 L22 14 L27 8 L34 22" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
           <circle cx="18" cy="4" r="2" fill="currentColor" opacity="0.6"/>
         </svg>
         <span class="logo-text">FAVOR <em>CITY VIEW</em></span>
       </a>
-      <button class="nav-toggle" id="nav-toggle" aria-label="Открыть меню" aria-expanded="false">
+      <button class="nav-toggle" id="nav-toggle" aria-label="Меню" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
       <nav class="main-nav" id="main-nav">
         <a href="#hero">Главная</a>
         <a href="#about">О нас</a>
         <a href="#menu">Меню</a>
-        <a href="#catering">Йетиринг</a>
+        <a href="#catering">Кейтеринг</a>
         <a href="#gallery">Галерея</a>
       </nav>
       <div class="header-socials">
-        <!-- Цветные иконки соцсетей — замените href на реальные ссылки -->
         <a href="https://instagram.com/" target="_blank" rel="noopener" aria-label="Instagram" class="social-link social-link--instagram">
           <i class="fab fa-instagram"></i>
         </a>
@@ -44,11 +43,10 @@
     </div>
   </header>
 
-  <!-- ═══════════════════════════════ HERO ═══════════════════════════════ -->
+  <!-- HERO -->
   <section class="hero" id="hero">
     <div class="hero-bg">
-      <!-- Замените src на ссылку вашего фото (горы Алматы / телебашня) -->
-      <img src=favor.jfif alt="Панорамный вид на Алматы" class="hero-img" id="hero-photo" />
+      <img src=favor.jfif alt="Панорамный вид на Алматы" class="hero-img" />
       <div class="hero-overlay"></div>
     </div>
     <div class="hero-content">
@@ -56,7 +54,6 @@
       <h1 class="hero-title">FAVOR<br><em>CITY VIEW.</em><br>ALMATY</h1>
       <p class="hero-sub">ВАШ ВИД НА СОВЕРШЕНСТВО.</p>
       <p class="hero-desc">Уникальный опыт · Панорама · Гастрономия</p>
-      <!-- Единственная кнопка "Забронировать" на всём сайте -->
       <a href="https://wa.me/7XXXXXXXXXX" target="_blank" rel="noopener" class="btn-primary">Забронировать столик</a>
     </div>
     <div class="hero-scroll-hint">
@@ -65,7 +62,7 @@
     </div>
   </section>
 
-  <!-- ═══════════════════════════════ ABOUT ═══════════════════════════════ -->
+  <!-- ABOUT -->
   <section class="about" id="about">
     <div class="container about-grid">
       <div class="about-image-wrap">
@@ -90,77 +87,55 @@
     </div>
   </section>
 
-  <!-- ═══════════════════════════════ MENU ═══════════════════════════════ -->
+  <!-- MENU -->
   <section class="menu-section" id="menu">
     <div class="container">
       <p class="section-eyebrow center">Наши блюда</p>
       <h2 class="section-title center">МЕНЮ</h2>
       <div class="gold-divider center"></div>
 
-      <!-- Tab Navigation -->
       <div class="menu-tabs" role="tablist">
         <button class="menu-tab active" data-tab="food" role="tab" aria-selected="true">Кухня</button>
         <button class="menu-tab" data-tab="drinks" role="tab" aria-selected="false">Напитки</button>
         <button class="menu-tab" data-tab="desserts" role="tab" aria-selected="false">Десерты</button>
       </div>
 
-      <!-- ══════════ FOOD PANEL ══════════ -->
+      <!-- ── КУХНЯ ── -->
       <div class="menu-panel active" id="tab-food">
         <div class="menu-categories">
 
-          <!-- Салаты — с фото -->
           <div class="menu-category">
-            <div class="menu-category-inner">
-              <div class="cat-photo">
-                <!-- Вставьте фото салата -->
-                <img src="" alt="Салаты" />
-                <div class="cat-photo-placeholder"><i class="fa fa-image"></i><span>Фото салата</span></div>
-              </div>
-              <div class="cat-body">
-                <h3 class="cat-title">Салаты</h3>
-                <ul class="dish-list">
-                  <li class="dish-item new-badge"><span class="dish-name">Салат из свежих овощей</span><span class="dish-price">5 000</span></li>
-                  <li class="dish-item"><span class="dish-name">Нежный салат из запеченных баклажанов, томатов, микс зелени и козьим сыром</span><span class="dish-price">5 500</span></li>
-                  <li class="dish-item"><span class="dish-name">Витаминный салат из молодой свёклы, рукколы и козьего сыра</span><span class="dish-price">5 500</span></li>
-                  <li class="dish-item"><span class="dish-name">Малосольная капуста и огурцы <em>(предзаказ)</em></span><span class="dish-price">5 500</span></li>
-                  <li class="dish-item"><span class="dish-name">Оливье с телятиной</span><span class="dish-price">5 800</span></li>
-                  <li class="dish-item"><span class="dish-name">Салат Зелёный из ассорти зелени, авокадо, огурцов и киноа</span><span class="dish-price">5 900</span></li>
-                  <li class="dish-item"><span class="dish-name">Тёплый салат из конины, перепелиных яиц, томатов и зелени</span><span class="dish-price">6 500</span></li>
-                  <li class="dish-item"><span class="dish-name">Салат с авокадо, розовыми томатами и фермерским сыром под соусом песто</span><span class="dish-price">6 500</span></li>
-                  <li class="dish-item"><span class="dish-name">Чапче (фунчоза бататовая) с овощами</span><span class="dish-price">5 000</span></li>
-                  <li class="dish-item"><span class="dish-name">Чапче (фунчоза бататовая) с индейкой</span><span class="dish-price">5 500</span></li>
-                  <li class="dish-item new-badge"><span class="dish-name">Буррата (150 г) с томатами и соусом песто</span><span class="dish-price">7 900</span></li>
-                </ul>
-              </div>
-            </div>
+            <h3 class="cat-title">Салаты</h3>
+            <ul class="dish-list">
+              <li class="dish-item new-badge"><span class="dish-name">Салат из свежих овощей</span><span class="dish-price">5 000</span></li>
+              <li class="dish-item"><span class="dish-name">Нежный салат из запеченных баклажанов, томатов, микс зелени и козьим сыром</span><span class="dish-price">5 500</span></li>
+              <li class="dish-item"><span class="dish-name">Витаминный салат из молодой свёклы, рукколы и козьего сыра</span><span class="dish-price">5 500</span></li>
+              <li class="dish-item"><span class="dish-name">Малосольная капуста и огурцы <em>(предзаказ)</em></span><span class="dish-price">5 500</span></li>
+              <li class="dish-item"><span class="dish-name">Оливье с телятиной</span><span class="dish-price">5 800</span></li>
+              <li class="dish-item"><span class="dish-name">Салат Зелёный из ассорти зелени, авокадо, огурцов и киноа</span><span class="dish-price">5 900</span></li>
+              <li class="dish-item"><span class="dish-name">Тёплый салат из конины, перепелиных яиц, томатов и зелени</span><span class="dish-price">6 500</span></li>
+              <li class="dish-item"><span class="dish-name">Салат с авокадо, розовыми томатами и фермерским сыром под соусом песто</span><span class="dish-price">6 500</span></li>
+              <li class="dish-item"><span class="dish-name">Чапче (фунчоза бататовая) с овощами</span><span class="dish-price">5 000</span></li>
+              <li class="dish-item"><span class="dish-name">Чапче (фунчоза бататовая) с индейкой</span><span class="dish-price">5 500</span></li>
+              <li class="dish-item new-badge"><span class="dish-name">Буррата (150 г) с томатами и соусом песто</span><span class="dish-price">7 900</span></li>
+            </ul>
           </div>
 
-          <!-- Закуски — с фото -->
           <div class="menu-category">
-            <div class="menu-category-inner">
-              <div class="cat-photo">
-                <!-- Вставьте фото закуски -->
-                <img src="" alt="Закуски" />
-                <div class="cat-photo-placeholder"><i class="fa fa-image"></i><span>Фото закуски</span></div>
-              </div>
-              <div class="cat-body">
-                <h3 class="cat-title">Закуски</h3>
-                <ul class="dish-list">
-                  <li class="dish-item new-badge"><span class="dish-name">Ломтики свеклы с песто и сырным кремом</span><span class="dish-price">3 800</span></li>
-                  <li class="dish-item"><span class="dish-name">К вину: Оливки зелёные, авторский курт</span><span class="dish-price">4 500</span></li>
-                  <li class="dish-item new-badge"><span class="dish-name">Хумус с томатами</span><span class="dish-price">4 500</span></li>
-                  <li class="dish-item new-badge"><span class="dish-name">Запеченные красные перцы с сырным муссом</span><span class="dish-price">4 500</span></li>
-                  <li class="dish-item"><span class="dish-name">Хрустящие баклажаны с соусом унаги</span><span class="dish-price">4 800</span></li>
-                  <li class="dish-item"><span class="dish-name">Семга пряного посола с чиабаттой</span><span class="dish-price">6 500</span></li>
-                  <li class="dish-item"><span class="dish-name">Мозговые косточки</span><span class="dish-price">6 500</span></li>
-                  <li class="dish-item"><span class="dish-name">Холодец <em>(предзаказ)</em></span><span class="dish-price">6 800</span></li>
-                  <li class="dish-item"><span class="dish-name">Сырное плато к вину: пармезан, горгонзола, камамбер, качокавала, авторский курт, ягоды, миндаль и фундук</span><span class="dish-price">12 500</span></li>
-                </ul>
-              </div>
-            </div>
+            <h3 class="cat-title">Закуски</h3>
+            <ul class="dish-list">
+              <li class="dish-item new-badge"><span class="dish-name">Ломтики свеклы с песто и сырным кремом</span><span class="dish-price">3 800</span></li>
+              <li class="dish-item"><span class="dish-name">К вину: Оливки зелёные, авторский курт</span><span class="dish-price">4 500</span></li>
+              <li class="dish-item new-badge"><span class="dish-name">Хумус с томатами</span><span class="dish-price">4 500</span></li>
+              <li class="dish-item new-badge"><span class="dish-name">Запеченные красные перцы с сырным муссом</span><span class="dish-price">4 500</span></li>
+              <li class="dish-item"><span class="dish-name">Хрустящие баклажаны с соусом унаги</span><span class="dish-price">4 800</span></li>
+              <li class="dish-item"><span class="dish-name">Семга пряного посола с чиабаттой</span><span class="dish-price">6 500</span></li>
+              <li class="dish-item"><span class="dish-name">Мозговые косточки</span><span class="dish-price">6 500</span></li>
+              <li class="dish-item"><span class="dish-name">Холодец <em>(предзаказ)</em></span><span class="dish-price">6 800</span></li>
+              <li class="dish-item"><span class="dish-name">Сырное плато к вину: пармезан, горгонзола, камамбер, качокавала, авторский курт, ягоды, миндаль и фундук</span><span class="dish-price">12 500</span></li>
+            </ul>
           </div>
 
-          <!-- Супы + Выпечка — обычный стиль (без фото карточки, короткие категории) -->
           <div class="menu-category">
             <h3 class="cat-title">Супы</h3>
             <ul class="dish-list">
@@ -183,71 +158,19 @@
             </ul>
           </div>
 
-          <!-- Фото-баннер между разделами -->
-          <div class="menu-photo-banner">
-            <!-- Вставьте широкое фото (интерьер / терраса / подача блюд) -->
-            <img src="" alt="Атмосфера ресторана" />
-            <div class="mpb-placeholder"><i class="fa fa-image"></i><span>Широкое фото атмосферы</span></div>
-            <div class="mpb-overlay"><span class="mpb-label">Всё из даров моря</span></div>
-          </div>
-
-          <!-- Морепродукты — с фото -->
           <div class="menu-category">
-            <div class="menu-category-inner">
-              <div class="cat-photo">
-                <img src="" alt="Морепродукты" />
-                <div class="cat-photo-placeholder"><i class="fa fa-image"></i><span>Фото блюда</span></div>
-              </div>
-              <div class="cat-body">
-                <h3 class="cat-title">Всё из даров моря</h3>
-                <ul class="dish-list">
-                  <li class="dish-item new-badge"><span class="dish-name">Котлетки из семги под азиатским соусом</span><span class="dish-price">5 900</span></li>
-                  <li class="dish-item"><span class="dish-name">Чёрный рис с креветками и овощами на WOK</span><span class="dish-price">6 500</span></li>
-                  <li class="dish-item"><span class="dish-name">Тигровые креветки (180 г) в соусе Том-Ям с томатами</span><span class="dish-price">7 900</span></li>
-                  <li class="dish-item"><span class="dish-name">Томлёный лосось по-сингапурски в соусе Тендаши с бланшированным шпинатом</span><span class="dish-price">8 900</span></li>
-                  <li class="dish-item"><span class="dish-name">Стейк лосося на углях с капонатой по-сицилийски</span><span class="dish-price">8 900</span></li>
-                  <li class="dish-item"><span class="dish-name">Королевские креветки под соусом Бер-Блан</span><span class="dish-price">9 900</span></li>
-                  <li class="dish-item"><span class="dish-name">Цельное Дорадо или Сибас на гриле, на пару, под соусом Аква Пацца</span><span class="dish-price">9 900</span></li>
-                </ul>
-              </div>
-            </div>
+            <h3 class="cat-title">Всё из даров моря</h3>
+            <ul class="dish-list">
+              <li class="dish-item new-badge"><span class="dish-name">Котлетки из семги под азиатским соусом</span><span class="dish-price">5 900</span></li>
+              <li class="dish-item"><span class="dish-name">Чёрный рис с креветками и овощами на WOK</span><span class="dish-price">6 500</span></li>
+              <li class="dish-item"><span class="dish-name">Тигровые креветки (180 г) в соусе Том-Ям с томатами</span><span class="dish-price">7 900</span></li>
+              <li class="dish-item"><span class="dish-name">Томлёный лосось по-сингапурски в соусе Тендаши с бланшированным шпинатом</span><span class="dish-price">8 900</span></li>
+              <li class="dish-item"><span class="dish-name">Стейк лосося на углях с капонатой по-сицилийски</span><span class="dish-price">8 900</span></li>
+              <li class="dish-item"><span class="dish-name">Королевские креветки под соусом Бер-Блан</span><span class="dish-price">9 900</span></li>
+              <li class="dish-item"><span class="dish-name">Цельное Дорадо или Сибас на гриле, на пару, под соусом Аква Пацца</span><span class="dish-price">9 900</span></li>
+            </ul>
           </div>
 
-          <!-- Мясо — с фото -->
-          <div class="menu-category">
-            <div class="menu-category-inner">
-              <div class="cat-photo">
-                <img src="" alt="Мясо и птица" />
-                <div class="cat-photo-placeholder"><i class="fa fa-image"></i><span>Фото стейка</span></div>
-              </div>
-              <div class="cat-body">
-                <h3 class="cat-title">Всё из мяса и птицы</h3>
-                <ul class="dish-list">
-                  <li class="dish-item"><span class="dish-name">Нежные голубцы из птицы в грибном соусе (200 г)</span><span class="dish-price">5 500</span></li>
-                  <li class="dish-item"><span class="dish-name">Цыплёнок (500 г) по домашнему с картофелем и йогуртовой заправкой</span><span class="dish-price">5 500</span></li>
-                  <li class="dish-item new-badge"><span class="dish-name">Куриная грудка (150 г) в сливочно-трюфельном соусе с бланшированным шпинатом</span><span class="dish-price">6 500</span></li>
-                  <li class="dish-item"><span class="dish-name">Люля кебаб из баранины</span><span class="dish-price">6 500</span></li>
-                  <li class="dish-item"><span class="dish-name">Бефстроганов из конины (150 г) с шампиньонами и картофельным пюре</span><span class="dish-price">6 500</span></li>
-                  <li class="dish-item"><span class="dish-name">Бургер классический</span><span class="dish-price">6 500</span></li>
-                  <li class="dish-item"><span class="dish-name">Ребро телятины (450 г) с пюре из батата</span><span class="dish-price">6 800</span></li>
-                  <li class="dish-item"><span class="dish-name">Медальоны из конины (200 г) с брюнуаз из корнеплодов</span><span class="dish-price">7 500</span></li>
-                  <li class="dish-item"><span class="dish-name">Стейк из вырезки конины на углях (200 г)</span><span class="dish-price">7 500</span></li>
-                  <li class="dish-item"><span class="dish-name">Стейк из вырезки конины XXL на углях (350 г)</span><span class="dish-price">9 800</span></li>
-                  <li class="dish-item"><span class="dish-name">Глазированные рёбра конины собственного копчения под соусом Quattro (360 г)</span><span class="dish-price">9 900</span></li>
-                </ul>
-                <div class="must-try-box">
-                  <p class="must-try-label">must try</p>
-                  <ul class="dish-list">
-                    <li class="dish-item"><span class="dish-name">Стейк Flank, KazBeef (300 г) под соусом Café de Paris</span><span class="dish-price">9 000</span></li>
-                    <li class="dish-item"><span class="dish-name">Стейк Рибай Black Angus, KazBeef — зернового откорма (350 г)</span><span class="dish-price">14 800</span></li>
-                    <li class="dish-item"><span class="dish-name">Стейк Рибай Prime, Black Angus, США — 180 дней зернового откорма (400 г)</span><span class="dish-price">37 500</span></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- WOK + Гарниры -->
           <div class="menu-category">
             <h3 class="cat-title">Блюда WOK</h3>
             <ul class="dish-list">
@@ -279,30 +202,46 @@
             </ul>
           </div>
 
-          <!-- Блюда на компанию — full width -->
-          <div class="menu-category full-width">
-            <div class="menu-category-inner">
-              <div class="cat-photo" style="height:200px;">
-                <img src="" alt="Блюда на компанию" />
-                <div class="cat-photo-placeholder"><i class="fa fa-image"></i><span>Фото блюда на компанию</span></div>
-              </div>
-              <div class="cat-body">
-                <h3 class="cat-title">Блюда на компанию</h3>
-                <ul class="dish-list sharing">
-                  <li class="dish-item"><span class="dish-name">Томлёная лопатка ягнёнка в собственном соку с картофелем и брокколи <em>(на 4 персоны)</em></span><span class="dish-price">32 000</span></li>
-                  <li class="dish-item"><span class="dish-name">Рёбра Black Angus, KazBeef <em>(на 4–5 персон, по предзаказу)</em></span><span class="dish-price">38 900</span></li>
-                  <li class="dish-item"><span class="dish-name">Дикий сибас (1 кг+, в соли) с овощами <em>(на 4 персоны, по предзаказу)</em></span><span class="dish-price">39 500</span></li>
-                  <li class="dish-item"><span class="dish-name">Мясной микс: Стейк Flank (KazBeef), ребро телятины, томлёная лопатка ягнёнка, медальоны из конины с овощами и зеленью <em>(на 5–6 персон)</em></span><span class="dish-price">48 500</span></li>
-                  <li class="dish-item"><span class="dish-name">Рыбный микс: Дорадо, Сибас, королевские и тигровые креветки с чёрным рисом, форель с овощами WOK <em>(на 5–6 персон)</em></span><span class="dish-price">49 500</span></li>
+          <div class="menu-category">
+            <h3 class="cat-title">Всё из мяса и птицы</h3>
+            <ul class="dish-list">
+              <li class="dish-item"><span class="dish-name">Нежные голубцы из птицы в грибном соусе (200 г)</span><span class="dish-price">5 500</span></li>
+              <li class="dish-item"><span class="dish-name">Цыплёнок (500 г) по домашнему с картофелем и йогуртовой заправкой</span><span class="dish-price">5 500</span></li>
+              <li class="dish-item new-badge"><span class="dish-name">Куриная грудка (150 г) в сливочно-трюфельном соусе с бланшированным шпинатом</span><span class="dish-price">6 500</span></li>
+              <li class="dish-item"><span class="dish-name">Люля кебаб из баранины</span><span class="dish-price">6 500</span></li>
+              <li class="dish-item"><span class="dish-name">Бефстроганов из конины (150 г) с шампиньонами и картофельным пюре</span><span class="dish-price">6 500</span></li>
+              <li class="dish-item"><span class="dish-name">Бургер классический</span><span class="dish-price">6 500</span></li>
+              <li class="dish-item"><span class="dish-name">Ребро телятины (450 г) с пюре из батата</span><span class="dish-price">6 800</span></li>
+              <li class="dish-item"><span class="dish-name">Медальоны из конины (200 г) с брюнуаз из корнеплодов</span><span class="dish-price">7 500</span></li>
+              <li class="dish-item"><span class="dish-name">Стейк из вырезки конины на углях (200 г)</span><span class="dish-price">7 500</span></li>
+              <li class="dish-item"><span class="dish-name">Стейк из вырезки конины XXL на углях (350 г)</span><span class="dish-price">9 800</span></li>
+              <li class="dish-item"><span class="dish-name">Глазированные рёбра конины собственного копчения под соусом Quattro (360 г)</span><span class="dish-price">9 900</span></li>
+              <div class="must-try-box">
+                <p class="must-try-label">must try</p>
+                <ul class="dish-list">
+                  <li class="dish-item"><span class="dish-name">Стейк Flank, KazBeef (300 г) под соусом Café de Paris</span><span class="dish-price">9 000</span></li>
+                  <li class="dish-item"><span class="dish-name">Стейк Рибай Black Angus, KazBeef — зернового откорма (350 г)</span><span class="dish-price">14 800</span></li>
+                  <li class="dish-item"><span class="dish-name">Стейк Рибай Prime, Black Angus, США — 180 дней зернового откорма (400 г)</span><span class="dish-price">37 500</span></li>
                 </ul>
               </div>
-            </div>
+            </ul>
+          </div>
+
+          <div class="menu-category span-2">
+            <h3 class="cat-title">Блюда на компанию</h3>
+            <ul class="dish-list">
+              <li class="dish-item"><span class="dish-name">Томлёная лопатка ягнёнка в собственном соку с картофелем и брокколи <em>(на 4 персоны)</em></span><span class="dish-price">32 000</span></li>
+              <li class="dish-item"><span class="dish-name">Рёбра Black Angus, KazBeef <em>(на 4–5 персон, по предзаказу)</em></span><span class="dish-price">38 900</span></li>
+              <li class="dish-item"><span class="dish-name">Дикий сибас (1 кг+, в соли) с овощами <em>(на 4 персоны, по предзаказу)</em></span><span class="dish-price">39 500</span></li>
+              <li class="dish-item"><span class="dish-name">Мясной микс: Стейк Flank (KazBeef), ребро телятины, томлёная лопатка ягнёнка, медальоны из конины с овощами и зеленью <em>(на 5–6 персон)</em></span><span class="dish-price">48 500</span></li>
+              <li class="dish-item"><span class="dish-name">Рыбный микс: Дорадо, Сибас, королевские и тигровые креветки с чёрным рисом, форель с овощами WOK <em>(на 5–6 персон)</em></span><span class="dish-price">49 500</span></li>
+            </ul>
           </div>
 
         </div>
-      </div><!-- /tab-food -->
+      </div>
 
-      <!-- ══════════ DRINKS PANEL ══════════ -->
+      <!-- ── НАПИТКИ ── -->
       <div class="menu-panel" id="tab-drinks">
         <div class="menu-categories">
 
@@ -351,7 +290,7 @@
             </ul>
           </div>
 
-          <div class="menu-category">
+          <div class="menu-category span-2">
             <h3 class="cat-title">Our Signature Teas <span class="unit">850 мл</span></h3>
             <ul class="dish-list">
               <li class="dish-item"><span class="dish-name">Имбирный чай / Ginger Tea <em class="desc">зелёный чай, лимон, гвоздика, имбирь, мята и мёд</em></span><span class="dish-price">3 500</span></li>
@@ -366,11 +305,11 @@
           <div class="menu-category">
             <h3 class="cat-title">Homemade Lemonades <span class="unit">1 л</span></h3>
             <ul class="dish-list">
-              <li class="dish-item"><span class="dish-name">Банан-Грейпфрут / Banana-Grapefruit</span><span class="dish-price">3 800</span></li>
-              <li class="dish-item"><span class="dish-name">Манго-Маракуйя / Mango-Passion Fruit</span><span class="dish-price">3 800</span></li>
-              <li class="dish-item"><span class="dish-name">Жасмин-Черешня / Jasmine-Cherry</span><span class="dish-price">3 800</span></li>
-              <li class="dish-item"><span class="dish-name">Апельсин-Клубника / Orange-Strawberry</span><span class="dish-price">3 800</span></li>
-              <li class="dish-item"><span class="dish-name">Клюквенный морс / Cranberry Juice</span><span class="dish-price">3 500</span></li>
+              <li class="dish-item"><span class="dish-name">Банан-Грейпфрут</span><span class="dish-price">3 800</span></li>
+              <li class="dish-item"><span class="dish-name">Манго-Маракуйя</span><span class="dish-price">3 800</span></li>
+              <li class="dish-item"><span class="dish-name">Жасмин-Черешня</span><span class="dish-price">3 800</span></li>
+              <li class="dish-item"><span class="dish-name">Апельсин-Клубника</span><span class="dish-price">3 800</span></li>
+              <li class="dish-item"><span class="dish-name">Клюквенный морс</span><span class="dish-price">3 500</span></li>
             </ul>
           </div>
 
@@ -385,19 +324,12 @@
           <div class="menu-category">
             <h3 class="cat-title">Fresh Juices <span class="unit">300 мл</span></h3>
             <ul class="dish-list">
-              <li class="dish-item"><span class="dish-name">Свежевыжатый морковный сок</span><span class="dish-price">3 000</span></li>
-              <li class="dish-item"><span class="dish-name">Свежевыжатый яблочный сок</span><span class="dish-price">3 000</span></li>
-              <li class="dish-item"><span class="dish-name">Свежевыжатый грейпфрутовый сок</span><span class="dish-price">3 700</span></li>
-              <li class="dish-item"><span class="dish-name">Свежевыжатый апельсиновый сок</span><span class="dish-price">3 700</span></li>
+              <li class="dish-item"><span class="dish-name">Морковный сок</span><span class="dish-price">3 000</span></li>
+              <li class="dish-item"><span class="dish-name">Яблочный сок</span><span class="dish-price">3 000</span></li>
+              <li class="dish-item"><span class="dish-name">Грейпфрутовый сок</span><span class="dish-price">3 700</span></li>
+              <li class="dish-item"><span class="dish-name">Апельсиновый сок</span><span class="dish-price">3 700</span></li>
               <li class="dish-item"><span class="dish-name">Яблочный сок и сок сельдерея</span><span class="dish-price">3 900</span></li>
             </ul>
-          </div>
-
-          <!-- Алкоголь — фото-баннер -->
-          <div class="menu-photo-banner">
-            <img src="" alt="Барная карта" />
-            <div class="mpb-placeholder"><i class="fa fa-wine-glass-alt"></i><span>Фото бара</span></div>
-            <div class="mpb-overlay"><span class="mpb-label">Барная карта</span></div>
           </div>
 
           <div class="menu-category">
@@ -453,7 +385,7 @@
           </div>
 
           <div class="menu-category">
-            <h3 class="cat-title">Cognac / Digestive <span class="unit">50 мл</span></h3>
+            <h3 class="cat-title">Cognac / Digestive / Liquor <span class="unit">50 мл</span></h3>
             <ul class="dish-list">
               <li class="dish-item"><span class="dish-name">Hennessy V.S.O.P (Cognac)</span><span class="dish-price">4 900</span></li>
               <li class="dish-item"><span class="dish-name">Chateau du Breuil V.S.O.P (calvados)</span><span class="dish-price">2 900</span></li>
@@ -473,35 +405,27 @@
           </div>
 
         </div>
-      </div><!-- /tab-drinks -->
+      </div>
 
-      <!-- ══════════ DESSERTS PANEL ══════════ -->
+      <!-- ── ДЕСЕРТЫ ── -->
       <div class="menu-panel" id="tab-desserts">
         <div class="menu-categories">
 
-          <div class="menu-category">
-            <div class="menu-category-inner">
-              <div class="cat-photo">
-                <img src="" alt="Десерты" />
-                <div class="cat-photo-placeholder"><i class="fa fa-image"></i><span>Фото десерта</span></div>
-              </div>
-              <div class="cat-body">
-                <h3 class="cat-title">Десерты</h3>
-                <ul class="dish-list">
-                  <li class="dish-item"><span class="dish-name">Маковый пирог с карамельным соусом</span><span class="dish-price">3 000</span></li>
-                  <li class="dish-item"><span class="dish-name">Птичье молоко</span><span class="dish-price">3 000</span></li>
-                  <li class="dish-item"><span class="dish-name">Киевский торт в авторском исполнении с грецким орехом, ягодой и нежным кремом</span><span class="dish-price">3 800</span></li>
-                  <li class="dish-item"><span class="dish-name">Наш фирменный Наполеон</span><span class="dish-price">3 800</span></li>
-                  <li class="dish-item"><span class="dish-name">Профитроли с заварным кремом и шоколадным соусом</span><span class="dish-price">3 800</span></li>
-                  <li class="dish-item"><span class="dish-name">Медовик по нашей фирменной рецептуре со сливочным мороженым</span><span class="dish-price">3 900</span></li>
-                  <li class="dish-item new-badge"><span class="dish-name">Брауни из тёмного шоколада с пармезаном и мороженым</span><span class="dish-price">4 900</span></li>
-                </ul>
-              </div>
-            </div>
+          <div class="menu-category span-2">
+            <h3 class="cat-title">Десерты</h3>
+            <ul class="dish-list">
+              <li class="dish-item"><span class="dish-name">Маковый пирог с карамельным соусом</span><span class="dish-price">3 000</span></li>
+              <li class="dish-item"><span class="dish-name">Птичье молоко</span><span class="dish-price">3 000</span></li>
+              <li class="dish-item"><span class="dish-name">Киевский торт в авторском исполнении с грецким орехом, ягодой и нежным кремом</span><span class="dish-price">3 800</span></li>
+              <li class="dish-item"><span class="dish-name">Наш фирменный Наполеон</span><span class="dish-price">3 800</span></li>
+              <li class="dish-item"><span class="dish-name">Профитроли с заварным кремом и шоколадным соусом</span><span class="dish-price">3 800</span></li>
+              <li class="dish-item"><span class="dish-name">Медовик по нашей фирменной рецептуре со сливочным мороженым</span><span class="dish-price">3 900</span></li>
+              <li class="dish-item new-badge"><span class="dish-name">Брауни из тёмного шоколада с пармезаном и мороженым</span><span class="dish-price">4 900</span></li>
+            </ul>
           </div>
 
           <div class="menu-category">
-            <h3 class="cat-title">Мороженое <span class="unit">(из натуральных продуктов)</span></h3>
+            <h3 class="cat-title">Мороженое <span class="unit">из натуральных продуктов</span></h3>
             <ul class="dish-list">
               <li class="dish-item"><span class="dish-name">Сливочное (1 шарик)</span><span class="dish-price">800</span></li>
               <li class="dish-item"><span class="dish-name">Шоколадное (1 шарик)</span><span class="dish-price">800</span></li>
@@ -510,22 +434,19 @@
           </div>
 
         </div>
-      </div><!-- /tab-desserts -->
+      </div>
 
       <p class="menu-note">Обслуживание 12% · Просьба предупреждать официанта об имеющейся у Вас аллергии.</p>
-
     </div>
   </section>
 
-  <!-- ═══════════════════════════════ ЙЕТИРИНГ (CATERING) ═══════════════════════════════ -->
+  <!-- КЕЙТЕРИНГ -->
   <section class="catering" id="catering">
     <div class="container catering-inner">
-
       <div class="catering-text">
         <p class="section-eyebrow">Ваш праздник</p>
-        <h2 class="section-title light">ЙЕТИРИНГ</h2>
+        <h2 class="section-title light">КЕЙТЕРИНГ</h2>
         <div class="gold-divider"></div>
-
         <div class="event-tags">
           <span class="event-tag">Свадьбы</span>
           <span class="event-tag">Дни рождения</span>
@@ -534,46 +455,22 @@
           <span class="event-tag">Презентации</span>
           <span class="event-tag">Выездное меню</span>
         </div>
-
         <p>Favor City View организует кейтеринг любого масштаба — от камерного ужина до масштабного банкета. Наша команда берёт на себя всё: от меню и подачи до сервировки и декора.</p>
         <p>Мы адаптируем меню под формат вашего мероприятия — европейская, восточная, японская кухня или авторский микс. Всё готовится из свежих продуктов, с той же тщательностью, что и в ресторане.</p>
-
         <div class="catering-features">
-          <div class="catering-feature">
-            <i class="fa fa-concierge-bell"></i>
-            <span>Выездное обслуживание по всему Алматы</span>
-          </div>
-          <div class="catering-feature">
-            <i class="fa fa-users"></i>
-            <span>От 10 до 500+ гостей</span>
-          </div>
-          <div class="catering-feature">
-            <i class="fa fa-utensils"></i>
-            <span>Авторское меню под ваш формат</span>
-          </div>
-          <div class="catering-feature">
-            <i class="fa fa-glass-cheers"></i>
-            <span>Полный барный сопровод</span>
-          </div>
-          <div class="catering-feature">
-            <i class="fa fa-star"></i>
-            <span>Профессиональный персонал</span>
-          </div>
-          <div class="catering-feature">
-            <i class="fa fa-calendar-check"></i>
-            <span>Индивидуальный план мероприятия</span>
-          </div>
+          <div class="catering-feature"><i class="fa fa-concierge-bell"></i><span>Выездное обслуживание по всему Алматы</span></div>
+          <div class="catering-feature"><i class="fa fa-users"></i><span>От 10 до 500+ гостей</span></div>
+          <div class="catering-feature"><i class="fa fa-utensils"></i><span>Авторское меню под ваш формат</span></div>
+          <div class="catering-feature"><i class="fa fa-glass-cheers"></i><span>Полный барный сопровод</span></div>
+          <div class="catering-feature"><i class="fa fa-star"></i><span>Профессиональный персонал</span></div>
+          <div class="catering-feature"><i class="fa fa-calendar-check"></i><span>Индивидуальный план мероприятия</span></div>
         </div>
-
         <a href="https://wa.me/7XXXXXXXXXX" target="_blank" rel="noopener" class="btn-whatsapp">
           <i class="fab fa-whatsapp"></i> Обсудить ваш заказ
         </a>
       </div>
-
-      <!-- Image mosaic -->
       <div class="catering-mosaic">
         <div class="catering-mosaic-item">
-          <!-- Вставьте вертикальное фото кейтеринга -->
           <img src="" alt="Кейтеринг" />
           <div class="catering-mosaic-placeholder"><i class="fa fa-image"></i><span>Фото кейтеринга</span></div>
         </div>
@@ -582,68 +479,39 @@
           <div class="catering-mosaic-placeholder"><i class="fa fa-image"></i><span>Банкет</span></div>
         </div>
         <div class="catering-mosaic-item">
-          <img src="" alt="Подача блюд" />
+          <img src="" alt="Подача" />
           <div class="catering-mosaic-placeholder"><i class="fa fa-image"></i><span>Подача</span></div>
         </div>
       </div>
-
     </div>
   </section>
 
-  <!-- ═══════════════════════════════ GALLERY ═══════════════════════════════ -->
+  <!-- GALLERY -->
   <section class="gallery" id="gallery">
     <div class="container">
       <p class="section-eyebrow center">Атмосфера</p>
       <h2 class="section-title center">ГАЛЕРЕЯ</h2>
       <div class="gold-divider center"></div>
       <div class="gallery-grid">
-        <div class="gallery-item">
-          <img src="" alt="Интерьер" />
-          <div class="gallery-placeholder"><i class="fa fa-image"></i><span>Интерьер</span></div>
-          <div class="gallery-overlay"><span>Интерьер</span></div>
-        </div>
-        <div class="gallery-item">
-          <img src="" alt="Кухня" />
-          <div class="gallery-placeholder"><i class="fa fa-image"></i><span>Кухня</span></div>
-          <div class="gallery-overlay"><span>Наша кухня</span></div>
-        </div>
-        <div class="gallery-item">
-          <img src="" alt="Вид на горы" />
-          <div class="gallery-placeholder"><i class="fa fa-image"></i><span>Панорама</span></div>
-          <div class="gallery-overlay"><span>Панорамный вид</span></div>
-        </div>
-        <div class="gallery-item">
-          <img src="" alt="Терраса" />
-          <div class="gallery-placeholder"><i class="fa fa-image"></i><span>Терраса</span></div>
-          <div class="gallery-overlay"><span>Летняя терраса</span></div>
-        </div>
-        <div class="gallery-item">
-          <img src="" alt="Блюда" />
-          <div class="gallery-placeholder"><i class="fa fa-image"></i><span>Блюда</span></div>
-          <div class="gallery-overlay"><span>Гастрономия</span></div>
-        </div>
-        <div class="gallery-item">
-          <img src="" alt="Вечер" />
-          <div class="gallery-placeholder"><i class="fa fa-image"></i><span>Вечер</span></div>
-          <div class="gallery-overlay"><span>Вечерняя атмосфера</span></div>
-        </div>
+        <div class="gallery-item"><img src="" alt="Интерьер"/><div class="gallery-placeholder"><i class="fa fa-image"></i><span>Интерьер</span></div><div class="gallery-overlay"><span>Интерьер</span></div></div>
+        <div class="gallery-item"><img src="" alt="Кухня"/><div class="gallery-placeholder"><i class="fa fa-image"></i><span>Кухня</span></div><div class="gallery-overlay"><span>Наша кухня</span></div></div>
+        <div class="gallery-item"><img src="" alt="Панорама"/><div class="gallery-placeholder"><i class="fa fa-image"></i><span>Панорама</span></div><div class="gallery-overlay"><span>Панорамный вид</span></div></div>
+        <div class="gallery-item"><img src="" alt="Терраса"/><div class="gallery-placeholder"><i class="fa fa-image"></i><span>Терраса</span></div><div class="gallery-overlay"><span>Летняя терраса</span></div></div>
+        <div class="gallery-item"><img src="" alt="Блюда"/><div class="gallery-placeholder"><i class="fa fa-image"></i><span>Блюда</span></div><div class="gallery-overlay"><span>Гастрономия</span></div></div>
+        <div class="gallery-item"><img src="" alt="Вечер"/><div class="gallery-placeholder"><i class="fa fa-image"></i><span>Вечер</span></div><div class="gallery-overlay"><span>Вечерняя атмосфера</span></div></div>
       </div>
     </div>
   </section>
 
-  <!-- ═══════════════════════════════ FOOTER ═══════════════════════════════ -->
+  <!-- FOOTER -->
   <footer class="site-footer">
     <div class="container footer-inner">
       <div class="footer-brand">
         <span class="logo-text light">FAVOR <em>CITY VIEW</em></span>
         <p class="footer-tagline">Ваш вид на совершенство.</p>
         <div class="footer-socials">
-          <a href="https://instagram.com/" target="_blank" rel="noopener" aria-label="Instagram" class="social-link social-link--instagram">
-            <i class="fab fa-instagram"></i>
-          </a>
-          <a href="https://wa.me/7XXXXXXXXXX" target="_blank" rel="noopener" aria-label="WhatsApp" class="social-link social-link--whatsapp">
-            <i class="fab fa-whatsapp"></i>
-          </a>
+          <a href="https://instagram.com/" target="_blank" rel="noopener" aria-label="Instagram" class="social-link social-link--instagram"><i class="fab fa-instagram"></i></a>
+          <a href="https://wa.me/7XXXXXXXXXX" target="_blank" rel="noopener" aria-label="WhatsApp" class="social-link social-link--whatsapp"><i class="fab fa-whatsapp"></i></a>
         </div>
       </div>
       <div class="footer-address">
@@ -665,13 +533,10 @@
   </footer>
 
   <script>
-    // ── Fixed header on scroll ──
     const header = document.getElementById('site-header');
     window.addEventListener('scroll', () => {
       header.classList.toggle('scrolled', window.scrollY > 60);
     });
-
-    // ── Mobile nav toggle ──
     const navToggle = document.getElementById('nav-toggle');
     const mainNav   = document.getElementById('main-nav');
     navToggle.addEventListener('click', () => {
@@ -684,18 +549,13 @@
         navToggle.setAttribute('aria-expanded', 'false');
       })
     );
-
-    // ── Menu tabs ──
     document.querySelectorAll('.menu-tab').forEach(btn => {
       btn.addEventListener('click', () => {
         const tab = btn.dataset.tab;
-        document.querySelectorAll('.menu-tab').forEach(b => {
-          b.classList.remove('active');
-          b.setAttribute('aria-selected', 'false');
-        });
+        document.querySelectorAll('.menu-tab').forEach(b => { b.classList.remove('active'); b.setAttribute('aria-selected','false'); });
         document.querySelectorAll('.menu-panel').forEach(p => p.classList.remove('active'));
         btn.classList.add('active');
-        btn.setAttribute('aria-selected', 'true');
+        btn.setAttribute('aria-selected','true');
         document.getElementById('tab-' + tab).classList.add('active');
       });
     });
