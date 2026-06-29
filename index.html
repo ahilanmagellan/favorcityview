@@ -81,36 +81,67 @@
 
   <!-- ABOUT -->
   <section class="about" id="about">
-    <div class="container about-grid">
-      <div class="about-images-col">
-        <div class="about-image-wrap">
-          <img src="" alt="Интерьер ресторана Favor City View" class="about-img" />
-          <div class="about-img-placeholder">
-            <i class="fa fa-image"></i>
-            <span data-i18n="photo_interior">Фото интерьера</span>
-          </div>
-        </div>
-        <div class="about-image-wrap about-image-wrap--second">
-          <img src="" alt="Атмосфера ресторана Favor City View" class="about-img" />
-          <div class="about-img-placeholder">
-            <i class="fa fa-image"></i>
-            <span>Фото атмосферы</span>
-          </div>
-        </div>
+
+    <!-- ПК: 3 колонки -->
+    <div class="about-desktop">
+      <!-- Колонка 1: большое фото на всю высоту -->
+      <div class="about-photo-main">
+        <img src="" alt="Интерьер ресторана" class="about-img" />
+        <div class="about-img-placeholder"><i class="fa fa-image"></i><span data-i18n="photo_interior">Фото интерьера</span></div>
       </div>
-      <div class="about-text">
+      <!-- Колонка 2: текст по центру -->
+      <div class="about-text-col">
         <p class="section-eyebrow" data-i18n="about_eyebrow">Наша история</p>
         <h2 class="section-title" data-i18n="about_title">О НАС</h2>
         <div class="gold-divider"></div>
-        <p data-i18n="about_text">Favor City View — это больше, чем ресторан. Это место, где встречаются изысканность и уют. Мы предлагаем европейскую, восточную и японскую кухни, живую музыку, и, конечно, незабываемый вид на Алматы.</p>
+        <p class="about-desc" data-i18n="about_text">Favor City View — это больше, чем ресторан. Это место, где встречаются изысканность и уют. Мы предлагаем европейскую, восточную и японскую кухни, живую музыку, и, конечно, незабываемый вид на Алматы.</p>
+        <div class="about-stats">
+          <div class="about-stat"><span class="stat-num">3</span><span class="stat-label" data-i18n="stat_cuisine">Кухни мира</span></div>
+          <div class="about-stat"><span class="stat-num">7+</span><span class="stat-label" data-i18n="stat_years">Лет работы</span></div>
+          <div class="about-stat"><span class="stat-num">∞</span><span class="stat-label" data-i18n="stat_view">Вид на Алматы</span></div>
+        </div>
         <ul class="about-features">
-          <li><i class="fa fa-utensils"></i> <span data-i18n="feat_cuisine">Европейская, восточная и японская кухня</span></li>
-          <li><i class="fa fa-music"></i> <span data-i18n="feat_music">Живая музыка</span></li>
-          <li><i class="fa fa-mountain"></i> <span data-i18n="feat_view">Панорамный вид на горы Алматы</span></li>
-          <li><i class="fa fa-star"></i> <span data-i18n="feat_terrace">Открытая летняя терраса</span></li>
+          <li><i class="fa fa-utensils"></i><span data-i18n="feat_cuisine">Европейская, восточная и японская кухня</span></li>
+          <li><i class="fa fa-music"></i><span data-i18n="feat_music">Живая музыка</span></li>
+          <li><i class="fa fa-mountain"></i><span data-i18n="feat_view">Панорамный вид на горы Алматы</span></li>
+          <li><i class="fa fa-star"></i><span data-i18n="feat_terrace">Открытая летняя терраса</span></li>
         </ul>
       </div>
+      <!-- Колонка 3: второе фото + карточка-цитата -->
+      <div class="about-right-col">
+        <div class="about-photo-secondary">
+          <img src="" alt="Атмосфера ресторана" class="about-img" />
+          <div class="about-img-placeholder"><i class="fa fa-image"></i><span>Фото атмосферы</span></div>
+        </div>
+        <div class="about-quote">
+          <i class="fa fa-quote-left about-quote-icon"></i>
+          <p data-i18n="about_quote">Место, где каждый вечер становится особенным.</p>
+        </div>
+      </div>
     </div>
+
+    <!-- ТЕЛЕФОН: полноширинное фото + текст снизу -->
+    <div class="about-mobile">
+      <div class="about-mobile-photo">
+        <img src="" alt="Интерьер ресторана" class="about-img" />
+        <div class="about-img-placeholder"><i class="fa fa-image"></i><span data-i18n="photo_interior">Фото интерьера</span></div>
+        <!-- Оверлей с названием поверх фото -->
+        <div class="about-mobile-photo-overlay">
+          <p class="section-eyebrow light" data-i18n="about_eyebrow">Наша история</p>
+          <h2 class="about-mobile-title" data-i18n="about_title">О НАС</h2>
+        </div>
+      </div>
+      <div class="about-mobile-body">
+        <p class="about-desc" data-i18n="about_text">Favor City View — это больше, чем ресторан. Это место, где встречаются изысканность и уют. Мы предлагаем европейскую, восточную и японскую кухни, живую музыку, и, конечно, незабываемый вид на Алматы.</p>
+        <div class="about-mobile-features">
+          <div class="about-mobile-feat"><i class="fa fa-utensils"></i><span data-i18n="feat_cuisine_short">3 кухни мира</span></div>
+          <div class="about-mobile-feat"><i class="fa fa-music"></i><span data-i18n="feat_music">Живая музыка</span></div>
+          <div class="about-mobile-feat"><i class="fa fa-mountain"></i><span data-i18n="feat_view_short">Панорама гор</span></div>
+          <div class="about-mobile-feat"><i class="fa fa-star"></i><span data-i18n="feat_terrace_short">Летняя терраса</span></div>
+        </div>
+      </div>
+    </div>
+
   </section>
 
   <!-- MENU -->
@@ -379,6 +410,9 @@
       about_text:'Favor City View — это больше, чем ресторан. Это место, где встречаются изысканность и уют. Мы предлагаем европейскую, восточную и японскую кухни, живую музыку, и, конечно, незабываемый вид на Алматы.',
       feat_cuisine:'Европейская, восточная и японская кухня',feat_music:'Живая музыка',
       feat_view:'Панорамный вид на горы Алматы',feat_terrace:'Открытая летняя терраса',
+      feat_cuisine_short:'3 кухни мира',feat_view_short:'Панорама гор',feat_terrace_short:'Летняя терраса',
+      stat_cuisine:'Кухни мира',stat_years:'Лет работы',stat_view:'Вид на Алматы',
+      about_quote:'Место, где каждый вечер становится особенным.',
       menu_eyebrow:'Наши блюда',menu_title:'МЕНЮ',
       tab_food:'Кухня',tab_drinks:'Напитки',tab_desserts:'Десерты',
       menu_note:'Обслуживание 12% · Просьба предупреждать официанта об имеющейся у Вас аллергии.',
@@ -402,6 +436,9 @@
       about_text:'Favor City View — жай мейрамхана емес. Бұл изысканность пен жайлылық кездесетін орын. Біз еуропалық, шығыстық және жапондық асхананы, тірі музыканы және Алматының ұмытылмас көрінісін ұсынамыз.',
       feat_cuisine:'Еуропалық, шығыстық және жапондық ас',feat_music:'Тірі музыка',
       feat_view:'Алматы тауларының панорамасы',feat_terrace:'Ашық жазғы терраса',
+      feat_cuisine_short:'3 ас мәдениеті',feat_view_short:'Таулар панорамасы',feat_terrace_short:'Жазғы терраса',
+      stat_cuisine:'Ас мәдениеті',stat_years:'Жыл жұмыс',stat_view:'Алматы көрінісі',
+      about_quote:'Әр кеш ерекше болатын орын.',
       menu_eyebrow:'Біздің тағамдар',menu_title:'МӘЗІР',
       tab_food:'Тағамдар',tab_drinks:'Сусындар',tab_desserts:'Десерттер',
       menu_note:'Қызмет көрсету 12% · Аллергияңыз туралы даяшыны ескертіңіз.',
@@ -425,6 +462,9 @@
       about_text:'Favor City View is more than a restaurant. It is a place where sophistication meets comfort. We offer European, Eastern and Japanese cuisine, live music, and, of course, an unforgettable view of Almaty.',
       feat_cuisine:'European, Eastern & Japanese cuisine',feat_music:'Live music',
       feat_view:'Panoramic view of the Almaty mountains',feat_terrace:'Open summer terrace',
+      feat_cuisine_short:'3 world cuisines',feat_view_short:'Mountain panorama',feat_terrace_short:'Summer terrace',
+      stat_cuisine:'World cuisines',stat_years:'Years open',stat_view:'Almaty view',
+      about_quote:'A place where every evening becomes something special.',
       menu_eyebrow:'Our dishes',menu_title:'MENU',
       tab_food:'Kitchen',tab_drinks:'Drinks',tab_desserts:'Desserts',
       menu_note:'Service charge 12% · Please inform your waiter of any allergies.',
